@@ -43,3 +43,4 @@ example:
 
             ])->title($this->title())
                 ->onlyOnDetail(),
+![Alt text](Screen Shot 2021-12-30 at 6.04.41 PM.png?raw=true "Optional Title")
