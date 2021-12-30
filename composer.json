@@ -1,5 +1,5 @@
 {
-    "name": "seo/payroll_custom_view",
+    "name": "seocomp/payroll_custom_view",
     "description": "A Laravel Nova resource tool.",
     "keywords": [
         "laravel",
