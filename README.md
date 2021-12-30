@@ -43,5 +43,3 @@ example:
 
             ])->title($this->title())
                 ->onlyOnDetail(),
-
-![img.png](img.png)
