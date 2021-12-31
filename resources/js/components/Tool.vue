@@ -1,8 +1,10 @@
 <template>
     <div style="overflow-x:auto;" v-if="true">
-        <h3>
+        <div class="flex items-center mb-3">
+          <h1 class="flex-auto truncate text-90 font-normal text-2xl">
             {{this.panel.fields[0].title}}
-        </h3>
+          </h1>
+        </div>
         <table class="customTableView">
             <thead>
             <tr>
