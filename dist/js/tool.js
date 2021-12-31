@@ -165,7 +165,7 @@ exports = module.exports = __webpack_require__(5)(false);
 
 
 // module
-exports.push([module.i, "\n.customTableView {\n  background-color: white;\n  border: 1px solid #000;\n}\n.customTableView th, .customTableView td {\n    padding: 15px;\n    text-align: left;\n    border-bottom: 1px solid #ddd;\n}\n.customTableView tr:nth-child(even) {\n    background-color: #f2f2f2;\n}\n", ""]);
+exports.push([module.i, "\n.customTableView th, .customTableView td {\n  padding: 15px;\n  text-align: left;\n  border-bottom-width: 1px;\n  border-color: #eef1f4;\n}\n", ""]);
 
 // exports
 
@@ -652,6 +652,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['resourceName', 'resourceId', 'panel', 'field'],
@@ -675,20 +683,20 @@ var render = function() {
           _c(
             "h1",
             { staticClass: "flex-auto truncate text-90 font-normal text-2xl" },
-            [
-              _vm._v(
-                "\n        " + _vm._s(this.panel.fields[0].title) + "\n      "
-              )
-            ]
+            [_vm._v("\n      " + _vm._s(this.panel.fields[0].title) + "\n    ")]
           )
         ]),
         _vm._v(" "),
-        _c("table", { staticClass: "customTableView" }, [
+        _c("table", { staticClass: "customTableView card mb-6 py-3 px-6" }, [
           _c("thead", [
             _c(
               "tr",
               _vm._l(this.panel.fields[0].titles, function(field, index) {
-                return _c("th", [_vm._v(_vm._s(field))])
+                return _c("th", [
+                  _c("h4", { staticClass: "font-normal text-80" }, [
+                    _vm._v("\n          " + _vm._s(field) + "\n        ")
+                  ])
+                ])
               }),
               0
             )
@@ -700,7 +708,11 @@ var render = function() {
               return _c(
                 "tr",
                 _vm._l(field, function(fieldtext, index) {
-                  return _c("td", [_vm._v(_vm._s(fieldtext))])
+                  return _c("td", [
+                    _c("p", { staticClass: "text-90 " }, [
+                      _vm._v("\n          " + _vm._s(fieldtext) + "\n        ")
+                    ])
+                  ])
                 }),
                 0
               )
