@@ -1,4 +1,6 @@
 # TableViewResourceToolNova
+
+composer require seocomp/payroll_custom_view
 a nova resource tool to provide a custom table view 
 
 with three methods 
