@@ -1,5 +1,5 @@
 {
-    "name": "seocomp/payroll_custom_view",
+    "name": "seo/payroll-table-view",
     "description": "A Laravel Nova resource tool.",
     "keywords": [
         "laravel",
@@ -7,17 +7,17 @@
     ],
     "license": "MIT",
     "require": {
-        "php": ">=7.1.0"
+        "php": "^7.3|^8.0"
     },
     "autoload": {
         "psr-4": {
-            "Seo\\PayrollCustomView\\": "src/"
+            "Seo\\PayrollTableView\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Seo\\PayrollCustomView\\ToolServiceProvider"
+                "Seo\\PayrollTableView\\ToolServiceProvider"
             ]
         }
     },

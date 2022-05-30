@@ -1,6 +1,6 @@
 <?php
 
-namespace Seo\PayrollCustomView;
+namespace Seo\PayrollTableView;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
@@ -21,8 +21,8 @@ class ToolServiceProvider extends ServiceProvider
         });
 
         Nova::serving(function (ServingNova $event) {
-            Nova::script('payroll_custom_view', __DIR__.'/../dist/js/tool.js');
-            Nova::style('payroll_custom_view', __DIR__.'/../dist/css/tool.css');
+            Nova::script('payroll-table-view', __DIR__.'/../dist/js/tool.js');
+            Nova::style('payroll-table-view', __DIR__.'/../dist/css/tool.css');
         });
     }
 
@@ -38,7 +38,7 @@ class ToolServiceProvider extends ServiceProvider
         }
 
         Route::middleware(['nova'])
-                ->prefix('nova-vendor/payroll_custom_view')
+                ->prefix('nova-vendor/payroll-table-view')
                 ->group(__DIR__.'/../routes/api.php');
     }
 

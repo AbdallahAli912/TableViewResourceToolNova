@@ -32,24 +32,9 @@
 
 <script>
 export default {
-  props: ['resourceName', 'resourceId', 'panel','field'],
+  props: ['resourceName', 'resourceId', 'panel'],
 
   mounted() {
-    //
   },
 }
 </script>
-
-<style lang="scss">
-
-.customTableView {
-  th, td {
-    padding: 15px;
-    text-align: left;
-    border-bottom-width: 1px;
-    border-color: #eef1f4;
-  }
-}
-
-
-</style>
